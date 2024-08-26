@@ -1,6 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import sidebars from './sidebars';
 
 const config: Config = {
   title: 'My Site',
@@ -79,6 +80,12 @@ const config: Config = {
           label: 'Tutorial',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+{
+          type: 'docSidebar',
+          sidebarId: 'saaDocSidebar',
+          position: 'left',
+          label: 'AWS SAA Docs',
+        },
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
